@@ -1,5 +1,6 @@
 ARG v1=17
 FROM openjdk:${v1}
 COPY ./target/*.jar* .jar
-EXPOSE 9090
+EXPOSE 8080
 CMD["java","-jar","*.jar"]
+
